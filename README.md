@@ -115,7 +115,6 @@ Tests for robustness including:
 ### UI Test (1 scenario)
 
 - Real-time output update validation
-- Tests that translation appears dynamically as user types
 
 ## Test Data Structure
 
@@ -164,12 +163,6 @@ If Playwright browsers aren't working:
 npx playwright install --force chromium
 ```
 
-## Test Results
-
-Test results are saved in the `test-results/` directory:
-- HTML report: `test-results/html-report/`
-- JSON results: `test-results/test-results.json`
-- Screenshots/Videos: `test-results/artifacts/`
 
 ## Notes
 
@@ -178,10 +171,3 @@ Test results are saved in the `test-results/` directory:
 - Screenshots and videos are captured only on failure
 - All tests use the same base URL configured in `playwright.config.js`
 
-## License
-
-This project is for educational purposes as part of IT3040 - ITPM assignment.
-
-## Author
-
-BSc (Hons) in Information Technology - Year 3 Student
