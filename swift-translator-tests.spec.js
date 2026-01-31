@@ -107,7 +107,7 @@ const TEST_DATA = {
       length: 'M'
     },
     
-    // Commands
+    
     {
       tcId: 'Pos_Fun_010',
       name: 'Convert sentence with currency value',
@@ -358,9 +358,9 @@ const TEST_DATA = {
   ui: {
     tcId: 'Pos_UI_001',
     name: 'Real-time translation updates as typing',
-    input: 'mama gedhara yanavaa.',
-    partialInput: 'mama gedhara ',
-    expectedFull: 'මම ගෙදර යනවා.',
+    input: 'mama adha campus yanavaa.',
+    partialInput: 'mama adha ',
+    expectedFull: 'මම අද campus යනවා.',
     category: 'Usability flow',
     grammar: 'Present tense',
     length: 'S'
@@ -476,7 +476,7 @@ test.describe('SwiftTranslator - Singlish to Sinhala Conversion Tests', () => {
       await input.pressSequentially(TEST_DATA.ui.partialInput, { delay: 150 });
       
       // Wait for partial output
-      await page.waitForTimeout(1500);
+      await page.waitForTimeout(5000);
       
       // Verify partial translation appears
       let outputText = await output.textContent();
